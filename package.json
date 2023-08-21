@@ -1,0 +1,17 @@
+{
+  "name": "tjs-bug-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lukas-runge/tjs-bug-demo.git",
+  "author": "Lukas Runge <login@lukasrunge.de>",
+  "license": "MIT",
+  "scripts": {
+    "demo": "yarn cli && yarn programatic",
+		"cli": "typescript-json-schema --required 'src/udr.next.d.ts' 'Device'",
+		"programatic": "ts-node main.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript-json-schema": "^0.59.0"
+  }
+}
