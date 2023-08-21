@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "demo": "yarn cli && yarn programatic",
-		"cli": "typescript-json-schema --required 'src/udr.next.d.ts' 'Device'",
+		"cli": "typescript-json-schema --required src/udr.next.d.ts Device",
 		"programatic": "ts-node main.ts"
   },
   "dependencies": {
